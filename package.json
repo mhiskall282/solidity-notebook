@@ -1,7 +1,7 @@
 {
   "name": "solidity-notebook",
   "version": "1.0.0",
-  "description": "",
+  "description": "> 🤖 Automated continuous learning system for Solidity development with comprehensive CRUD operations",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
