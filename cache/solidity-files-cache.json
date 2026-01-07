@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/InitialContract_1767826518.sol": {
-      "lastModificationDate": 1767826518577,
+      "lastModificationDate": 1767826833910,
       "contentHash": "22fc0b8d30ed2aec769e6016348f8339",
       "sourceName": "contracts/crud/InitialContract_1767826518.sol",
       "solcConfig": {
@@ -35,6 +35,42 @@
       ],
       "artifacts": [
         "InitialContract"
+      ]
+    },
+    "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1767826849.sol": {
+      "lastModificationDate": 1767826849880,
+      "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
+      "sourceName": "contracts/security/AccessControl_1767826849.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "AccessControl"
       ]
     }
   }
