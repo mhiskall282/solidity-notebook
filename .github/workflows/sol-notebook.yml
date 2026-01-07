@@ -37,22 +37,32 @@ jobs:
             @nomicfoundation/hardhat-chai-matchers@^2.1.0 \
             @nomicfoundation/hardhat-ethers@^3.1.0 \
             @nomicfoundation/hardhat-verify@^2.1.0 \
+            @nomicfoundation/hardhat-ignition@^0.15.0 \
+            @nomicfoundation/hardhat-ignition-ethers@^0.15.0 \
+            @nomicfoundation/hardhat-network-helpers@^1.0.0 \
             @typechain/ethers-v6@^0.5.0 \
             @typechain/hardhat@^9.0.0 \
             @types/chai@^4.2.0 \
             @types/mocha@^10.0.0 \
+            @types/node@^20.0.0 \
             chai@^4.2.0 \
             ethers@^6.4.0 \
             hardhat-gas-reporter@^2.3.0 \
             solidity-coverage@^0.8.1 \
+            ts-node@^10.0.0 \
+            typechain@^8.3.0 \
+            typescript@^5.0.0 \
             --legacy-peer-deps
           
           echo "✅ Dependencies installed successfully"
       
       - name: Initialize Hardhat Configuration
         run: |
-          if [ ! -f "hardhat.config.js" ]; then
-            cat > hardhat.config.js << 'EOF'
+          # Remove old cache and config files
+          rm -rf cache artifacts hardhat.config.js hardhat.config.ts
+          
+          # Create fresh hardhat.config.js
+          cat > hardhat.config.js << 'EOF'
           /** @type import('hardhat/config').HardhatUserConfig */
           require("@nomicfoundation/hardhat-toolbox");
           
@@ -62,8 +72,7 @@ jobs:
               settings: {
                 optimizer: {
                   enabled: true,
-                  runs: 200,
-                  viaIR: true
+                  runs: 200
                 }
               }
             },
@@ -82,8 +91,11 @@ jobs:
             }
           };
           EOF
-            echo "✅ Created hardhat.config.js"
-          fi
+          echo "✅ Created clean hardhat.config.js"
+          
+          # Verify config file
+          echo "📋 Verifying hardhat.config.js:"
+          cat hardhat.config.js | grep -A 5 "optimizer"
           
           # Create project structure
           mkdir -p contracts/{crud,tokens,defi,nft,governance,security,utils}
@@ -99,7 +111,8 @@ jobs:
           TIMESTAMP=$(date +%s)
           ACTIVITY=$((RANDOM % 20))
           
-          echo "🎲 Running Activity #$ACTIVITY at $DATE"
+          echo "🎲 Selected Activity: #$ACTIVITY at $DATE"
+          echo "=================================="
           
           case $ACTIVITY in
             0)
@@ -233,56 +246,68 @@ jobs:
               ;;
               
             1)
-              echo "🔄 UPDATE: Modifying existing contract..."
-              if [ "$(find contracts -name '*.sol' 2>/dev/null)" ]; then
-                RANDOM_FILE=$(find contracts -name '*.sol' | shuf -n 1)
-                FILENAME=$(basename "$RANDOM_FILE")
-                
-                # Add a new function to existing contract
-                cat >> "$RANDOM_FILE" << EOF
-
-          // === Auto-Generated Update: ${DATE} ===
-          
-          /**
-           * @notice Enhanced functionality added via automation
-           * @dev Generated at ${DATE}
-           */
-          function getVersion() external pure returns (string memory) {
-              return "v1.${TIMESTAMP}";
-          }
-          
-          function getTimestamp() external view returns (uint256) {
-              return block.timestamp;
-          }
-          
-          function getBlockNumber() external view returns (uint256) {
-              return block.number;
-          }
-          
-          // Updated: ${DATE}
-          // Optimization: Gas improvements and new utility functions added
-          EOF
-                
-                echo "✅ Enhanced contract: $FILENAME with new functions"
-              else
-                echo "⚠️ No contracts found, creating initial contract..."
-                cat > "contracts/crud/InitialContract_${TIMESTAMP}.sol" << 'EOF'
+              echo "🔄 CREATE: Adding new contract to collection..."
+              # Always create a new contract in Activity 1
+              CONTRACT_TYPES=("Token" "Storage" "Manager" "Controller" "Handler")
+              RANDOM_TYPE=${CONTRACT_TYPES[$RANDOM % ${#CONTRACT_TYPES[@]}]}
+              
+              cat > "contracts/crud/${RANDOM_TYPE}_${TIMESTAMP}.sol" << EOF
           // SPDX-License-Identifier: MIT
           pragma solidity ^0.8.24;
           
-          contract InitialContract {
-              uint256 public counter;
+          /**
+           * @title ${RANDOM_TYPE}
+           * @dev Auto-generated contract - ${DATE}
+           */
+          contract ${RANDOM_TYPE}_${TIMESTAMP} {
+              uint256 public id;
+              address public creator;
+              string public name;
+              bool public isActive;
               
-              function increment() external {
-                  counter++;
+              mapping(address => bool) public authorized;
+              
+              event Created(uint256 id, address creator);
+              event StatusChanged(bool isActive);
+              event AuthorizationUpdated(address indexed user, bool status);
+              
+              constructor() {
+                  creator = msg.sender;
+                  isActive = true;
+                  authorized[msg.sender] = true;
+                  emit Created(block.timestamp, msg.sender);
               }
               
-              function getCounter() external view returns (uint256) {
-                  return counter;
+              modifier onlyAuthorized() {
+                  require(authorized[msg.sender], "Not authorized");
+                  _;
+              }
+              
+              function setName(string memory _name) external onlyAuthorized {
+                  name = _name;
+              }
+              
+              function toggleActive() external onlyAuthorized {
+                  isActive = !isActive;
+                  emit StatusChanged(isActive);
+              }
+              
+              function authorize(address _user, bool _status) external onlyAuthorized {
+                  authorized[_user] = _status;
+                  emit AuthorizationUpdated(_user, _status);
+              }
+              
+              function getInfo() external view returns (
+                  uint256,
+                  address,
+                  string memory,
+                  bool
+              ) {
+                  return (id, creator, name, isActive);
               }
           }
           EOF
-              fi
+              echo "✅ Created new ${RANDOM_TYPE} contract"
               ;;
               
             2)
@@ -929,6 +954,372 @@ jobs:
           Generated: ${DATE}
           EOF
               echo "✅ Created weekly summary"
+              ;;
+              
+            15)
+              echo "🔧 REFACTOR: Optimizing existing contract..."
+              if [ "$(find contracts -name '*.sol' 2>/dev/null)" ]; then
+                RANDOM_FILE=$(find contracts -name '*.sol' | shuf -n 1)
+                FILENAME=$(basename "$RANDOM_FILE")
+                
+                # Add gas optimization comments and helper function
+                cat >> "$RANDOM_FILE" << EOF
+
+          // === Optimization Pass: ${DATE} ===
+                
+                # Add gas optimization comments and helper function
+                cat >> "$RANDOM_FILE" << EOF
+
+          // === Optimization Pass: ${DATE} ===
+          
+          /**
+           * @notice Gas-optimized helper function
+           * @dev Reduces redundant storage reads
+           */
+          function batchOperation(uint256[] calldata ids) external pure returns (uint256) {
+              uint256 total;
+              for (uint256 i; i < ids.length; ++i) {
+                  total += ids[i];
+              }
+              return total;
+          }
+          
+          /**
+           * @notice Emergency pause mechanism
+           * @dev Added for safety: ${DATE}
+           */
+          bool public paused;
+          
+          modifier whenNotPaused() {
+              require(!paused, "Contract is paused");
+              _;
+          }
+          EOF
+                echo "✅ Optimized: $FILENAME"
+              else
+                echo "⚠️ No contracts to modify, creating starter contract..."
+                cat > "contracts/crud/Starter_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract StarterContract {
+              uint256 public value;
+              
+              event ValueUpdated(uint256 newValue);
+              
+              function setValue(uint256 _value) external {
+                  value = _value;
+                  emit ValueUpdated(_value);
+              }
+              
+              function getValue() external view returns (uint256) {
+                  return value;
+              }
+          }
+          EOF
+                echo "✅ Created starter contract"
+              fi
+              ;;
+              
+            16)
+              echo "🆕 EXTEND: Adding features to random contract..."
+              if [ "$(find contracts -name '*.sol' 2>/dev/null)" ]; then
+                RANDOM_FILE=$(find contracts -name '*.sol' | shuf -n 1)
+                FILENAME=$(basename "$RANDOM_FILE")
+                
+                cat >> "$RANDOM_FILE" << EOF
+
+          // === Feature Extension: ${DATE} ===
+          
+          mapping(address => bool) public whitelist;
+          uint256 public feeBasisPoints = 100; // 1%
+          
+          event WhitelistUpdated(address indexed account, bool status);
+          event FeeUpdated(uint256 newFee);
+          
+          function updateWhitelist(address account, bool status) external {
+              whitelist[account] = status;
+              emit WhitelistUpdated(account, status);
+          }
+          
+          function updateFee(uint256 newFee) external {
+              require(newFee <= 1000, "Fee too high"); // Max 10%
+              feeBasisPoints = newFee;
+              emit FeeUpdated(newFee);
+          }
+          
+          function isWhitelisted(address account) external view returns (bool) {
+              return whitelist[account];
+          }
+          EOF
+                echo "✅ Extended: $FILENAME with whitelist and fee features"
+              else
+                echo "⚠️ No contracts to extend, creating base contract..."
+                cat > "contracts/tokens/BaseToken_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract BaseToken {
+              string public name = "Base Token";
+              string public symbol = "BASE";
+              uint256 public totalSupply;
+              
+              mapping(address => uint256) public balanceOf;
+              
+              event Transfer(address indexed from, address indexed to, uint256 value);
+              
+              constructor(uint256 _initialSupply) {
+                  totalSupply = _initialSupply;
+                  balanceOf[msg.sender] = _initialSupply;
+              }
+              
+              function transfer(address _to, uint256 _value) external returns (bool) {
+                  require(balanceOf[msg.sender] >= _value, "Insufficient balance");
+                  balanceOf[msg.sender] -= _value;
+                  balanceOf[_to] += _value;
+                  emit Transfer(msg.sender, _to, _value);
+                  return true;
+              }
+          }
+          EOF
+                echo "✅ Created base token contract"
+              fi
+              ;;
+              
+            17)
+              echo "🔐 SECURE: Adding security layer to contract..."
+              if [ "$(find contracts -name '*.sol' 2>/dev/null)" ]; then
+                RANDOM_FILE=$(find contracts -name '*.sol' | shuf -n 1)
+                FILENAME=$(basename "$RANDOM_FILE")
+                
+                cat >> "$RANDOM_FILE" << EOF
+
+          // === Security Enhancement: ${DATE} ===
+          
+          address public owner;
+          mapping(address => bool) public admins;
+          
+          event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+          event AdminAdded(address indexed admin);
+          event AdminRemoved(address indexed admin);
+          
+          modifier onlyOwner() {
+              require(msg.sender == owner, "Not owner");
+              _;
+          }
+          
+          modifier onlyAdmin() {
+              require(admins[msg.sender] || msg.sender == owner, "Not admin");
+              _;
+          }
+          
+          function transferOwnership(address newOwner) external onlyOwner {
+              require(newOwner != address(0), "Invalid address");
+              emit OwnershipTransferred(owner, newOwner);
+              owner = newOwner;
+          }
+          
+          function addAdmin(address admin) external onlyOwner {
+              admins[admin] = true;
+              emit AdminAdded(admin);
+          }
+          
+          function removeAdmin(address admin) external onlyOwner {
+              admins[admin] = false;
+              emit AdminRemoved(admin);
+          }
+          EOF
+                echo "✅ Secured: $FILENAME with ownership and admin controls"
+              else
+                echo "⚠️ No contracts to secure, creating ownable contract..."
+                cat > "contracts/security/Ownable_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract OwnableContract {
+              address public owner;
+              
+              event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+              
+              constructor() {
+                  owner = msg.sender;
+                  emit OwnershipTransferred(address(0), msg.sender);
+              }
+              
+              modifier onlyOwner() {
+                  require(msg.sender == owner, "Not owner");
+                  _;
+              }
+              
+              function transferOwnership(address newOwner) external onlyOwner {
+                  require(newOwner != address(0), "Invalid address");
+                  emit OwnershipTransferred(owner, newOwner);
+                  owner = newOwner;
+              }
+          }
+          EOF
+                echo "✅ Created ownable contract"
+              fi
+              ;;
+              
+            18)
+              echo "📊 UPGRADE: Adding analytics to contract..."
+              if [ "$(find contracts -name '*.sol' 2>/dev/null)" ]; then
+                RANDOM_FILE=$(find contracts -name '*.sol' | shuf -n 1)
+                FILENAME=$(basename "$RANDOM_FILE")
+                
+                cat >> "$RANDOM_FILE" << EOF
+
+          // === Analytics Module: ${DATE} ===
+          
+          struct ActivityStats {
+              uint256 totalCalls;
+              uint256 lastCallTime;
+              uint256 totalValue;
+          }
+          
+          mapping(address => ActivityStats) public userStats;
+          uint256 public globalCallCount;
+          
+          event ActivityTracked(address indexed user, uint256 value, uint256 timestamp);
+          
+          function trackActivity(uint256 value) internal {
+              userStats[msg.sender].totalCalls++;
+              userStats[msg.sender].lastCallTime = block.timestamp;
+              userStats[msg.sender].totalValue += value;
+              globalCallCount++;
+              emit ActivityTracked(msg.sender, value, block.timestamp);
+          }
+          
+          function getUserStats(address user) external view returns (
+              uint256 totalCalls,
+              uint256 lastCallTime,
+              uint256 totalValue
+          ) {
+              ActivityStats memory stats = userStats[user];
+              return (stats.totalCalls, stats.lastCallTime, stats.totalValue);
+          }
+          
+          function getGlobalStats() external view returns (uint256) {
+              return globalCallCount;
+          }
+          EOF
+                echo "✅ Upgraded: $FILENAME with analytics tracking"
+              else
+                echo "⚠️ No contracts to upgrade, creating counter contract..."
+                cat > "contracts/utils/Counter_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract Counter {
+              uint256 public count;
+              
+              event Incremented(uint256 newCount);
+              event Decremented(uint256 newCount);
+              
+              function increment() external {
+                  count++;
+                  emit Incremented(count);
+              }
+              
+              function decrement() external {
+                  require(count > 0, "Count is zero");
+                  count--;
+                  emit Decremented(count);
+              }
+              
+              function reset() external {
+                  count = 0;
+              }
+          }
+          EOF
+                echo "✅ Created counter contract"
+              fi
+              ;;
+              
+            19)
+              echo "💰 ENHANCE: Adding payment features to contract..."
+              if [ "$(find contracts -name '*.sol' 2>/dev/null)" ]; then
+                RANDOM_FILE=$(find contracts -name '*.sol' | shuf -n 1)
+                FILENAME=$(basename "$RANDOM_FILE")
+                
+                cat >> "$RANDOM_FILE" << EOF
+
+          // === Payment Module: ${DATE} ===
+          
+          uint256 public totalDeposits;
+          uint256 public totalWithdrawals;
+          mapping(address => uint256) public userDeposits;
+          
+          event Deposited(address indexed user, uint256 amount);
+          event Withdrawn(address indexed user, uint256 amount);
+          
+          function deposit() external payable {
+              require(msg.value > 0, "Must send ETH");
+              userDeposits[msg.sender] += msg.value;
+              totalDeposits += msg.value;
+              emit Deposited(msg.sender, msg.value);
+          }
+          
+          function withdraw(uint256 amount) external {
+              require(userDeposits[msg.sender] >= amount, "Insufficient balance");
+              userDeposits[msg.sender] -= amount;
+              totalWithdrawals += amount;
+              
+              (bool success, ) = msg.sender.call{value: amount}("");
+              require(success, "Transfer failed");
+              
+              emit Withdrawn(msg.sender, amount);
+          }
+          
+          function getBalance(address user) external view returns (uint256) {
+              return userDeposits[user];
+          }
+          
+          function getContractBalance() external view returns (uint256) {
+              return address(this).balance;
+          }
+          
+          receive() external payable {
+              userDeposits[msg.sender] += msg.value;
+              totalDeposits += msg.value;
+              emit Deposited(msg.sender, msg.value);
+          }
+          EOF
+                echo "✅ Enhanced: $FILENAME with payment functionality"
+              else
+                echo "⚠️ No contracts to enhance, creating vault contract..."
+                cat > "contracts/defi/SimpleVault_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract SimpleVault {
+              mapping(address => uint256) public deposits;
+              
+              event Deposited(address indexed user, uint256 amount);
+              event Withdrawn(address indexed user, uint256 amount);
+              
+              function deposit() external payable {
+                  require(msg.value > 0, "Must deposit ETH");
+                  deposits[msg.sender] += msg.value;
+                  emit Deposited(msg.sender, msg.value);
+              }
+              
+              function withdraw(uint256 amount) external {
+                  require(deposits[msg.sender] >= amount, "Insufficient balance");
+                  deposits[msg.sender] -= amount;
+                  (bool success, ) = msg.sender.call{value: amount}("");
+                  require(success, "Transfer failed");
+                  emit Withdrawn(msg.sender, amount);
+              }
+              
+              function getBalance() external view returns (uint256) {
+                  return deposits[msg.sender];
+              }
+          }
+          EOF
+                echo "✅ Created vault contract"
+              fi
               ;;
           esac
       
