@@ -58,8 +58,11 @@ jobs:
       
       - name: Initialize Hardhat Configuration
         run: |
-          if [ ! -f "hardhat.config.js" ]; then
-            cat > hardhat.config.js << 'EOF'
+          # Remove old cache and config files
+          rm -rf cache artifacts hardhat.config.js hardhat.config.ts
+          
+          # Create fresh hardhat.config.js
+          cat > hardhat.config.js << 'EOF'
           /** @type import('hardhat/config').HardhatUserConfig */
           require("@nomicfoundation/hardhat-toolbox");
           
@@ -88,8 +91,11 @@ jobs:
             }
           };
           EOF
-            echo "✅ Created hardhat.config.js"
-          fi
+          echo "✅ Created clean hardhat.config.js"
+          
+          # Verify config file
+          echo "📋 Verifying hardhat.config.js:"
+          cat hardhat.config.js | grep -A 5 "optimizer"
           
           # Create project structure
           mkdir -p contracts/{crud,tokens,defi,nft,governance,security,utils}
