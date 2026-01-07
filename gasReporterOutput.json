@@ -134,11 +134,71 @@
     "callData": [],
     "gasData": [],
     "numberOfCalls": 0
+   },
+   "EventLogger_3206b2c6": {
+    "key": "3206b2c6",
+    "isCall": true,
+    "contract": "EventLogger",
+    "method": "getLog",
+    "fnSig": "getLog(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "EventLogger_618033db": {
+    "key": "618033db",
+    "isCall": true,
+    "contract": "EventLogger",
+    "method": "getLogCount",
+    "fnSig": "getLogCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "EventLogger_e52e64f9": {
+    "key": "e52e64f9",
+    "isCall": true,
+    "contract": "EventLogger",
+    "method": "getRecentLogs",
+    "fnSig": "getRecentLogs(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "EventLogger_8d43d68c": {
+    "key": "8d43d68c",
+    "isCall": false,
+    "contract": "EventLogger",
+    "method": "logAction",
+    "fnSig": "logAction(string,bytes)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "EventLogger_e79899bd": {
+    "key": "e79899bd",
+    "isCall": true,
+    "contract": "EventLogger",
+    "method": "logs",
+    "fnSig": "logs(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
    }
   },
   "deployments": [
    {
     "name": "AccessControl",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "EventLogger",
     "gasData": [],
     "callData": []
    },
