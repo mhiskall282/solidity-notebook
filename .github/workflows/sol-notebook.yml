@@ -111,7 +111,8 @@ jobs:
           TIMESTAMP=$(date +%s)
           ACTIVITY=$((RANDOM % 20))
           
-          echo "🎲 Running Activity #$ACTIVITY at $DATE"
+          echo "🎲 Selected Activity: #$ACTIVITY at $DATE"
+          echo "=================================="
           
           case $ACTIVITY in
             0)
@@ -953,6 +954,11 @@ jobs:
                 cat >> "$RANDOM_FILE" << EOF
 
           // === Optimization Pass: ${DATE} ===
+                
+                # Add gas optimization comments and helper function
+                cat >> "$RANDOM_FILE" << EOF
+
+          // === Optimization Pass: ${DATE} ===
           
           /**
            * @notice Gas-optimized helper function
@@ -978,6 +984,28 @@ jobs:
           }
           EOF
                 echo "✅ Optimized: $FILENAME"
+              else
+                echo "⚠️ No contracts to modify, creating starter contract..."
+                cat > "contracts/crud/Starter_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract StarterContract {
+              uint256 public value;
+              
+              event ValueUpdated(uint256 newValue);
+              
+              function setValue(uint256 _value) external {
+                  value = _value;
+                  emit ValueUpdated(_value);
+              }
+              
+              function getValue() external view returns (uint256) {
+                  return value;
+              }
+          }
+          EOF
+                echo "✅ Created starter contract"
               fi
               ;;
               
@@ -1013,6 +1041,36 @@ jobs:
           }
           EOF
                 echo "✅ Extended: $FILENAME with whitelist and fee features"
+              else
+                echo "⚠️ No contracts to extend, creating base contract..."
+                cat > "contracts/tokens/BaseToken_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract BaseToken {
+              string public name = "Base Token";
+              string public symbol = "BASE";
+              uint256 public totalSupply;
+              
+              mapping(address => uint256) public balanceOf;
+              
+              event Transfer(address indexed from, address indexed to, uint256 value);
+              
+              constructor(uint256 _initialSupply) {
+                  totalSupply = _initialSupply;
+                  balanceOf[msg.sender] = _initialSupply;
+              }
+              
+              function transfer(address _to, uint256 _value) external returns (bool) {
+                  require(balanceOf[msg.sender] >= _value, "Insufficient balance");
+                  balanceOf[msg.sender] -= _value;
+                  balanceOf[_to] += _value;
+                  emit Transfer(msg.sender, _to, _value);
+                  return true;
+              }
+          }
+          EOF
+                echo "✅ Created base token contract"
               fi
               ;;
               
@@ -1060,6 +1118,35 @@ jobs:
           }
           EOF
                 echo "✅ Secured: $FILENAME with ownership and admin controls"
+              else
+                echo "⚠️ No contracts to secure, creating ownable contract..."
+                cat > "contracts/security/Ownable_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract OwnableContract {
+              address public owner;
+              
+              event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+              
+              constructor() {
+                  owner = msg.sender;
+                  emit OwnershipTransferred(address(0), msg.sender);
+              }
+              
+              modifier onlyOwner() {
+                  require(msg.sender == owner, "Not owner");
+                  _;
+              }
+              
+              function transferOwnership(address newOwner) external onlyOwner {
+                  require(newOwner != address(0), "Invalid address");
+                  emit OwnershipTransferred(owner, newOwner);
+                  owner = newOwner;
+              }
+          }
+          EOF
+                echo "✅ Created ownable contract"
               fi
               ;;
               
@@ -1106,6 +1193,35 @@ jobs:
           }
           EOF
                 echo "✅ Upgraded: $FILENAME with analytics tracking"
+              else
+                echo "⚠️ No contracts to upgrade, creating counter contract..."
+                cat > "contracts/utils/Counter_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract Counter {
+              uint256 public count;
+              
+              event Incremented(uint256 newCount);
+              event Decremented(uint256 newCount);
+              
+              function increment() external {
+                  count++;
+                  emit Incremented(count);
+              }
+              
+              function decrement() external {
+                  require(count > 0, "Count is zero");
+                  count--;
+                  emit Decremented(count);
+              }
+              
+              function reset() external {
+                  count = 0;
+              }
+          }
+          EOF
+                echo "✅ Created counter contract"
               fi
               ;;
               
@@ -1159,6 +1275,38 @@ jobs:
           }
           EOF
                 echo "✅ Enhanced: $FILENAME with payment functionality"
+              else
+                echo "⚠️ No contracts to enhance, creating vault contract..."
+                cat > "contracts/defi/SimpleVault_${TIMESTAMP}.sol" << 'EOF'
+          // SPDX-License-Identifier: MIT
+          pragma solidity ^0.8.24;
+          
+          contract SimpleVault {
+              mapping(address => uint256) public deposits;
+              
+              event Deposited(address indexed user, uint256 amount);
+              event Withdrawn(address indexed user, uint256 amount);
+              
+              function deposit() external payable {
+                  require(msg.value > 0, "Must deposit ETH");
+                  deposits[msg.sender] += msg.value;
+                  emit Deposited(msg.sender, msg.value);
+              }
+              
+              function withdraw(uint256 amount) external {
+                  require(deposits[msg.sender] >= amount, "Insufficient balance");
+                  deposits[msg.sender] -= amount;
+                  (bool success, ) = msg.sender.call{value: amount}("");
+                  require(success, "Transfer failed");
+                  emit Withdrawn(msg.sender, amount);
+              }
+              
+              function getBalance() external view returns (uint256) {
+                  return deposits[msg.sender];
+              }
+          }
+          EOF
+                echo "✅ Created vault contract"
               fi
               ;;
           esac
