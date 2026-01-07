@@ -25,6 +25,7 @@
     "solidity-coverage": "^0.8.17"
   },
   "directories": {
+    "doc": "docs",
     "test": "test"
   }
 }
