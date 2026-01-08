@@ -1235,6 +1235,50 @@
     "gasData": [],
     "numberOfCalls": 0
    },
+   "utils/Analytics_1767895032.sol:Analytics_84127b63": {
+    "key": "84127b63",
+    "isCall": true,
+    "contract": "utils/Analytics_1767895032.sol:Analytics",
+    "method": "getLatestMetric",
+    "fnSig": "getLatestMetric(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/Analytics_1767895032.sol:Analytics_61a7cc30": {
+    "key": "61a7cc30",
+    "isCall": true,
+    "contract": "utils/Analytics_1767895032.sol:Analytics",
+    "method": "getMetrics",
+    "fnSig": "getMetrics(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/Analytics_1767895032.sol:Analytics_c426cdcf": {
+    "key": "c426cdcf",
+    "isCall": true,
+    "contract": "utils/Analytics_1767895032.sol:Analytics",
+    "method": "metrics",
+    "fnSig": "metrics(bytes32,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/Analytics_1767895032.sol:Analytics_439a54b9": {
+    "key": "439a54b9",
+    "isCall": false,
+    "contract": "utils/Analytics_1767895032.sol:Analytics",
+    "method": "recordMetric",
+    "fnSig": "recordMetric(string,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "utils/EventLogger_1767828151.sol:EventLogger_3206b2c6": {
     "key": "3206b2c6",
     "isCall": true,
@@ -1434,6 +1478,11 @@
    },
    {
     "name": "utils/Analytics_1767880521.sol:Analytics",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "utils/Analytics_1767895032.sol:Analytics",
     "gasData": [],
     "callData": []
    },
