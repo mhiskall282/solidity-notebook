@@ -355,6 +355,61 @@
     "gasData": [],
     "numberOfCalls": 0
    },
+   "crud/ProductStore_1767870917.sol:ProductStore_125b0b34": {
+    "key": "125b0b34",
+    "isCall": false,
+    "contract": "crud/ProductStore_1767870917.sol:ProductStore",
+    "method": "addProduct",
+    "fnSig": "addProduct(string,uint256,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/ProductStore_1767870917.sol:ProductStore_e0f6ef87": {
+    "key": "e0f6ef87",
+    "isCall": true,
+    "contract": "crud/ProductStore_1767870917.sol:ProductStore",
+    "method": "productCount",
+    "fnSig": "productCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/ProductStore_1767870917.sol:ProductStore_7acc0b20": {
+    "key": "7acc0b20",
+    "isCall": true,
+    "contract": "crud/ProductStore_1767870917.sol:ProductStore",
+    "method": "products",
+    "fnSig": "products(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/ProductStore_1767870917.sol:ProductStore_a0440426": {
+    "key": "a0440426",
+    "isCall": false,
+    "contract": "crud/ProductStore_1767870917.sol:ProductStore",
+    "method": "purchaseProduct",
+    "fnSig": "purchaseProduct(uint256,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/ProductStore_1767870917.sol:ProductStore_f85292ca": {
+    "key": "f85292ca",
+    "isCall": false,
+    "contract": "crud/ProductStore_1767870917.sol:ProductStore",
+    "method": "updateProduct",
+    "fnSig": "updateProduct(uint256,uint256,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "Token_1767865368_2d1fb389": {
     "key": "2d1fb389",
     "isCall": false,
@@ -1001,6 +1056,11 @@
    },
    {
     "name": "crud/ProductStore_1767869040.sol:ProductStore",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "crud/ProductStore_1767870917.sol:ProductStore",
     "gasData": [],
     "callData": []
    },
