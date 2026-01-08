@@ -135,10 +135,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "DataStorage_34461067": {
+   "crud/DataStorage_1767829008.sol:DataStorage_34461067": {
     "key": "34461067",
     "isCall": true,
-    "contract": "DataStorage",
+    "contract": "crud/DataStorage_1767829008.sol:DataStorage",
     "method": "records",
     "fnSig": "records(uint256)",
     "intrinsicGas": [],
@@ -146,10 +146,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "DataStorage_88cdf2e0": {
+   "crud/DataStorage_1767829008.sol:DataStorage_88cdf2e0": {
     "key": "88cdf2e0",
     "isCall": false,
-    "contract": "DataStorage",
+    "contract": "crud/DataStorage_1767829008.sol:DataStorage",
     "method": "createRecord",
     "fnSig": "createRecord(bytes32,string)",
     "intrinsicGas": [],
@@ -157,10 +157,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "DataStorage_51096b02": {
+   "crud/DataStorage_1767829008.sol:DataStorage_51096b02": {
     "key": "51096b02",
     "isCall": true,
-    "contract": "DataStorage",
+    "contract": "crud/DataStorage_1767829008.sol:DataStorage",
     "method": "getUserRecords",
     "fnSig": "getUserRecords(address)",
     "intrinsicGas": [],
@@ -168,10 +168,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "DataStorage_5bbe446a": {
+   "crud/DataStorage_1767829008.sol:DataStorage_5bbe446a": {
     "key": "5bbe446a",
     "isCall": false,
-    "contract": "DataStorage",
+    "contract": "crud/DataStorage_1767829008.sol:DataStorage",
     "method": "invalidateRecord",
     "fnSig": "invalidateRecord(uint256)",
     "intrinsicGas": [],
@@ -179,10 +179,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "DataStorage_900407bc": {
+   "crud/DataStorage_1767829008.sol:DataStorage_900407bc": {
     "key": "900407bc",
     "isCall": true,
-    "contract": "DataStorage",
+    "contract": "crud/DataStorage_1767829008.sol:DataStorage",
     "method": "recordCount",
     "fnSig": "recordCount()",
     "intrinsicGas": [],
@@ -190,10 +190,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "DataStorage_1c631466": {
+   "crud/DataStorage_1767829008.sol:DataStorage_1c631466": {
     "key": "1c631466",
     "isCall": false,
-    "contract": "DataStorage",
+    "contract": "crud/DataStorage_1767829008.sol:DataStorage",
     "method": "updateRecord",
     "fnSig": "updateRecord(uint256,string)",
     "intrinsicGas": [],
@@ -201,10 +201,87 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "DataStorage_e85d28b9": {
+   "crud/DataStorage_1767829008.sol:DataStorage_e85d28b9": {
     "key": "e85d28b9",
     "isCall": true,
-    "contract": "DataStorage",
+    "contract": "crud/DataStorage_1767829008.sol:DataStorage",
+    "method": "userRecords",
+    "fnSig": "userRecords(address,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/DataStorage_1767873177.sol:DataStorage_34461067": {
+    "key": "34461067",
+    "isCall": true,
+    "contract": "crud/DataStorage_1767873177.sol:DataStorage",
+    "method": "records",
+    "fnSig": "records(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/DataStorage_1767873177.sol:DataStorage_88cdf2e0": {
+    "key": "88cdf2e0",
+    "isCall": false,
+    "contract": "crud/DataStorage_1767873177.sol:DataStorage",
+    "method": "createRecord",
+    "fnSig": "createRecord(bytes32,string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/DataStorage_1767873177.sol:DataStorage_51096b02": {
+    "key": "51096b02",
+    "isCall": true,
+    "contract": "crud/DataStorage_1767873177.sol:DataStorage",
+    "method": "getUserRecords",
+    "fnSig": "getUserRecords(address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/DataStorage_1767873177.sol:DataStorage_5bbe446a": {
+    "key": "5bbe446a",
+    "isCall": false,
+    "contract": "crud/DataStorage_1767873177.sol:DataStorage",
+    "method": "invalidateRecord",
+    "fnSig": "invalidateRecord(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/DataStorage_1767873177.sol:DataStorage_900407bc": {
+    "key": "900407bc",
+    "isCall": true,
+    "contract": "crud/DataStorage_1767873177.sol:DataStorage",
+    "method": "recordCount",
+    "fnSig": "recordCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/DataStorage_1767873177.sol:DataStorage_1c631466": {
+    "key": "1c631466",
+    "isCall": false,
+    "contract": "crud/DataStorage_1767873177.sol:DataStorage",
+    "method": "updateRecord",
+    "fnSig": "updateRecord(uint256,string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/DataStorage_1767873177.sol:DataStorage_e85d28b9": {
+    "key": "e85d28b9",
+    "isCall": true,
+    "contract": "crud/DataStorage_1767873177.sol:DataStorage",
     "method": "userRecords",
     "fnSig": "userRecords(address,uint256)",
     "intrinsicGas": [],
@@ -1050,6 +1127,16 @@
     "callData": []
    },
    {
+    "name": "crud/DataStorage_1767829008.sol:DataStorage",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "crud/DataStorage_1767873177.sol:DataStorage",
+    "gasData": [],
+    "callData": []
+   },
+   {
     "name": "crud/ProductStore_1767830016.sol:ProductStore",
     "gasData": [],
     "callData": []
@@ -1071,11 +1158,6 @@
    },
    {
     "name": "crud/UserRegistry_1767847806.sol:UserRegistry",
-    "gasData": [],
-    "callData": []
-   },
-   {
-    "name": "DataStorage",
     "gasData": [],
     "callData": []
    },
