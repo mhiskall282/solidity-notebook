@@ -245,34 +245,21 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "ProductStore_125b0b34": {
+   "crud/ProductStore_1767830016.sol:ProductStore_125b0b34": {
     "key": "125b0b34",
     "isCall": false,
-    "contract": "ProductStore",
+    "contract": "crud/ProductStore_1767830016.sol:ProductStore",
     "method": "addProduct",
     "fnSig": "addProduct(string,uint256,uint256)",
-    "intrinsicGas": [
-     21884,
-     21872
-    ],
-    "callData": [
-     0,
-     0
-    ],
-    "gasData": [
-     158824,
-     158836
-    ],
-    "numberOfCalls": 2,
-    "executionGasAverage": 158830,
-    "calldataGasAverage": 0,
-    "min": 158824,
-    "max": 158836
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
    },
-   "ProductStore_e0f6ef87": {
+   "crud/ProductStore_1767830016.sol:ProductStore_e0f6ef87": {
     "key": "e0f6ef87",
     "isCall": true,
-    "contract": "ProductStore",
+    "contract": "crud/ProductStore_1767830016.sol:ProductStore",
     "method": "productCount",
     "fnSig": "productCount()",
     "intrinsicGas": [],
@@ -280,10 +267,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "ProductStore_7acc0b20": {
+   "crud/ProductStore_1767830016.sol:ProductStore_7acc0b20": {
     "key": "7acc0b20",
     "isCall": true,
-    "contract": "ProductStore",
+    "contract": "crud/ProductStore_1767830016.sol:ProductStore",
     "method": "products",
     "fnSig": "products(uint256)",
     "intrinsicGas": [],
@@ -291,10 +278,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "ProductStore_a0440426": {
+   "crud/ProductStore_1767830016.sol:ProductStore_a0440426": {
     "key": "a0440426",
     "isCall": false,
-    "contract": "ProductStore",
+    "contract": "crud/ProductStore_1767830016.sol:ProductStore",
     "method": "purchaseProduct",
     "fnSig": "purchaseProduct(uint256,uint256)",
     "intrinsicGas": [],
@@ -302,26 +289,71 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "ProductStore_f85292ca": {
+   "crud/ProductStore_1767830016.sol:ProductStore_f85292ca": {
     "key": "f85292ca",
     "isCall": false,
-    "contract": "ProductStore",
+    "contract": "crud/ProductStore_1767830016.sol:ProductStore",
     "method": "updateProduct",
     "fnSig": "updateProduct(uint256,uint256,uint256)",
-    "intrinsicGas": [
-     21544
-    ],
-    "callData": [
-     0
-    ],
-    "gasData": [
-     35340
-    ],
-    "numberOfCalls": 1,
-    "executionGasAverage": 35340,
-    "calldataGasAverage": 0,
-    "min": 35340,
-    "max": 35340
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/ProductStore_1767869040.sol:ProductStore_125b0b34": {
+    "key": "125b0b34",
+    "isCall": false,
+    "contract": "crud/ProductStore_1767869040.sol:ProductStore",
+    "method": "addProduct",
+    "fnSig": "addProduct(string,uint256,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/ProductStore_1767869040.sol:ProductStore_e0f6ef87": {
+    "key": "e0f6ef87",
+    "isCall": true,
+    "contract": "crud/ProductStore_1767869040.sol:ProductStore",
+    "method": "productCount",
+    "fnSig": "productCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/ProductStore_1767869040.sol:ProductStore_7acc0b20": {
+    "key": "7acc0b20",
+    "isCall": true,
+    "contract": "crud/ProductStore_1767869040.sol:ProductStore",
+    "method": "products",
+    "fnSig": "products(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/ProductStore_1767869040.sol:ProductStore_a0440426": {
+    "key": "a0440426",
+    "isCall": false,
+    "contract": "crud/ProductStore_1767869040.sol:ProductStore",
+    "method": "purchaseProduct",
+    "fnSig": "purchaseProduct(uint256,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/ProductStore_1767869040.sol:ProductStore_f85292ca": {
+    "key": "f85292ca",
+    "isCall": false,
+    "contract": "crud/ProductStore_1767869040.sol:ProductStore",
+    "method": "updateProduct",
+    "fnSig": "updateProduct(uint256,uint256,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
    },
    "Token_1767865368_2d1fb389": {
     "key": "2d1fb389",
@@ -963,6 +995,16 @@
     "callData": []
    },
    {
+    "name": "crud/ProductStore_1767830016.sol:ProductStore",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "crud/ProductStore_1767869040.sol:ProductStore",
+    "gasData": [],
+    "callData": []
+   },
+   {
     "name": "crud/UserRegistry_1767842390.sol:UserRegistry",
     "gasData": [],
     "callData": []
@@ -981,22 +1023,6 @@
     "name": "InitialContract",
     "gasData": [],
     "callData": []
-   },
-   {
-    "name": "ProductStore",
-    "gasData": [
-     540682,
-     540682
-    ],
-    "callData": [
-     0,
-     0
-    ],
-    "executionGasAverage": 540682,
-    "calldataGasAverage": 0,
-    "min": 540682,
-    "max": 540682,
-    "percent": 1.8
    },
    {
     "name": "security/AccessControl_1767826849.sol:AccessControl",
