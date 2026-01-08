@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/DataStorage_1767829008.sol": {
-      "lastModificationDate": 1767830378050,
+      "lastModificationDate": 1767842376060,
       "contentHash": "73472ce8128177f3b1dad2fc29523081",
       "sourceName": "contracts/crud/DataStorage_1767829008.sol",
       "solcConfig": {
@@ -38,7 +38,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/InitialContract_1767826518.sol": {
-      "lastModificationDate": 1767830378050,
+      "lastModificationDate": 1767842376060,
       "contentHash": "22fc0b8d30ed2aec769e6016348f8339",
       "sourceName": "contracts/crud/InitialContract_1767826518.sol",
       "solcConfig": {
@@ -74,7 +74,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/ProductStore_1767830016.sol": {
-      "lastModificationDate": 1767830378050,
+      "lastModificationDate": 1767842376060,
       "contentHash": "d0ed4a01d587ffe083ba7ad306733d82",
       "sourceName": "contracts/crud/ProductStore_1767830016.sol",
       "solcConfig": {
@@ -109,8 +109,44 @@
         "ProductStore"
       ]
     },
+    "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/UserRegistry_1767842390.sol": {
+      "lastModificationDate": 1767842390473,
+      "contentHash": "07e38783463bc37f3f0d762b389db421",
+      "sourceName": "contracts/crud/UserRegistry_1767842390.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "UserRegistry"
+      ]
+    },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1767826849.sol": {
-      "lastModificationDate": 1767830378050,
+      "lastModificationDate": 1767842376060,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1767826849.sol",
       "solcConfig": {
@@ -146,7 +182,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1767828151.sol": {
-      "lastModificationDate": 1767830378050,
+      "lastModificationDate": 1767842376061,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1767828151.sol",
       "solcConfig": {

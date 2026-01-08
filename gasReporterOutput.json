@@ -224,6 +224,133 @@
     "min": 35340,
     "max": 35340
    },
+   "UserRegistry_b5ffbbcc": {
+    "key": "b5ffbbcc",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "addressToUserId",
+    "fnSig": "addressToUserId(address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_87b162b5": {
+    "key": "87b162b5",
+    "isCall": false,
+    "contract": "UserRegistry",
+    "method": "createUser",
+    "fnSig": "createUser(string,string)",
+    "intrinsicGas": [
+     22108,
+     22060,
+     22156,
+     22108
+    ],
+    "callData": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gasData": [
+     204263,
+     204311,
+     204311,
+     204359
+    ],
+    "numberOfCalls": 4,
+    "executionGasAverage": 204311,
+    "calldataGasAverage": 0,
+    "min": 204263,
+    "max": 204359
+   },
+   "UserRegistry_38f14845": {
+    "key": "38f14845",
+    "isCall": false,
+    "contract": "UserRegistry",
+    "method": "deleteUser",
+    "fnSig": "deleteUser(uint256)",
+    "intrinsicGas": [
+     21204
+    ],
+    "callData": [
+     0
+    ],
+    "gasData": [
+     30082
+    ],
+    "numberOfCalls": 1,
+    "executionGasAverage": 30082,
+    "calldataGasAverage": 0,
+    "min": 30082,
+    "max": 30082
+   },
+   "UserRegistry_4ed6bd1a": {
+    "key": "4ed6bd1a",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "getAllActiveUsers",
+    "fnSig": "getAllActiveUsers()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_b0467deb": {
+    "key": "b0467deb",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "getUser",
+    "fnSig": "getUser(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_7b7c3a9b": {
+    "key": "7b7c3a9b",
+    "isCall": false,
+    "contract": "UserRegistry",
+    "method": "updateUser",
+    "fnSig": "updateUser(uint256,string,string)",
+    "intrinsicGas": [
+     22296
+    ],
+    "callData": [
+     0
+    ],
+    "gasData": [
+     45898
+    ],
+    "numberOfCalls": 1,
+    "executionGasAverage": 45898,
+    "calldataGasAverage": 0,
+    "min": 45898,
+    "max": 45898
+   },
+   "UserRegistry_07973ccf": {
+    "key": "07973ccf",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "userCount",
+    "fnSig": "userCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_365b98b2": {
+    "key": "365b98b2",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "users",
+    "fnSig": "users(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "AccessControl_75b238fc": {
     "key": "75b238fc",
     "isCall": true,
@@ -382,6 +509,26 @@
     "min": 540682,
     "max": 540682,
     "percent": 1.8
+   },
+   {
+    "name": "UserRegistry",
+    "gasData": [
+     907823,
+     907823,
+     907823,
+     907823
+    ],
+    "callData": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "executionGasAverage": 907823,
+    "calldataGasAverage": 0,
+    "min": 907823,
+    "max": 907823,
+    "percent": 3
    }
   ]
  }
