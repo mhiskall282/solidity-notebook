@@ -2665,6 +2665,72 @@
     "gasData": [],
     "numberOfCalls": 0
    },
+   "security/AccessControl_1767956151.sol:AccessControl_75b238fc": {
+    "key": "75b238fc",
+    "isCall": true,
+    "contract": "security/AccessControl_1767956151.sol:AccessControl",
+    "method": "ADMIN_ROLE",
+    "fnSig": "ADMIN_ROLE()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1767956151.sol:AccessControl_282c51f3": {
+    "key": "282c51f3",
+    "isCall": true,
+    "contract": "security/AccessControl_1767956151.sol:AccessControl",
+    "method": "BURNER_ROLE",
+    "fnSig": "BURNER_ROLE()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1767956151.sol:AccessControl_d5391393": {
+    "key": "d5391393",
+    "isCall": true,
+    "contract": "security/AccessControl_1767956151.sol:AccessControl",
+    "method": "MINTER_ROLE",
+    "fnSig": "MINTER_ROLE()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1767956151.sol:AccessControl_2f2ff15d": {
+    "key": "2f2ff15d",
+    "isCall": false,
+    "contract": "security/AccessControl_1767956151.sol:AccessControl",
+    "method": "grantRole",
+    "fnSig": "grantRole(bytes32,address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1767956151.sol:AccessControl_91d14854": {
+    "key": "91d14854",
+    "isCall": true,
+    "contract": "security/AccessControl_1767956151.sol:AccessControl",
+    "method": "hasRole",
+    "fnSig": "hasRole(bytes32,address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1767956151.sol:AccessControl_d547741f": {
+    "key": "d547741f",
+    "isCall": false,
+    "contract": "security/AccessControl_1767956151.sol:AccessControl",
+    "method": "revokeRole",
+    "fnSig": "revokeRole(bytes32,address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "utils/Analytics_1767859051.sol:Analytics_84127b63": {
     "key": "84127b63",
     "isCall": true,
@@ -3280,6 +3346,11 @@
    },
    {
     "name": "security/AccessControl_1767900995.sol:AccessControl",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "security/AccessControl_1767956151.sol:AccessControl",
     "gasData": [],
     "callData": []
    },
