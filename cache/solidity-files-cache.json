@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/Controller_1768002267.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822026,
       "contentHash": "deddefc6ab21e2a2c18b6ffe78cdc358",
       "sourceName": "contracts/crud/Controller_1768002267.sol",
       "solcConfig": {
@@ -38,7 +38,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/DataStorage_1768001562.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822026,
       "contentHash": "73472ce8128177f3b1dad2fc29523081",
       "sourceName": "contracts/crud/DataStorage_1768001562.sol",
       "solcConfig": {
@@ -74,7 +74,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/DataStorage_1768024289.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822026,
       "contentHash": "73472ce8128177f3b1dad2fc29523081",
       "sourceName": "contracts/crud/DataStorage_1768024289.sol",
       "solcConfig": {
@@ -110,7 +110,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/DataStorage_1768042512.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822026,
       "contentHash": "73472ce8128177f3b1dad2fc29523081",
       "sourceName": "contracts/crud/DataStorage_1768042512.sol",
       "solcConfig": {
@@ -146,7 +146,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/Manager_1768034407.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822026,
       "contentHash": "e611ad0224de03fb188f66ca19541c54",
       "sourceName": "contracts/crud/Manager_1768034407.sol",
       "solcConfig": {
@@ -182,7 +182,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/Manager_1768044868.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "e0d394e2aebc0c7b28083bf549631f96",
       "sourceName": "contracts/crud/Manager_1768044868.sol",
       "solcConfig": {
@@ -218,7 +218,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/ProductStore_1768021296.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "d0ed4a01d587ffe083ba7ad306733d82",
       "sourceName": "contracts/crud/ProductStore_1768021296.sol",
       "solcConfig": {
@@ -254,7 +254,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/ProductStore_1768024663.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "d0ed4a01d587ffe083ba7ad306733d82",
       "sourceName": "contracts/crud/ProductStore_1768024663.sol",
       "solcConfig": {
@@ -290,7 +290,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/ProductStore_1768053262.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "d0ed4a01d587ffe083ba7ad306733d82",
       "sourceName": "contracts/crud/ProductStore_1768053262.sol",
       "solcConfig": {
@@ -326,7 +326,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/Storage_1767994705.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "d2293710e2a895ebae11702419fd5142",
       "sourceName": "contracts/crud/Storage_1767994705.sol",
       "solcConfig": {
@@ -362,7 +362,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1767902321.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1767902321.sol",
       "solcConfig": {
@@ -398,7 +398,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1767912697.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1767912697.sol",
       "solcConfig": {
@@ -434,7 +434,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1767923258.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1767923258.sol",
       "solcConfig": {
@@ -470,7 +470,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1767937386.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1767937386.sol",
       "solcConfig": {
@@ -506,7 +506,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1767950106.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1767950106.sol",
       "solcConfig": {
@@ -542,7 +542,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1767959810.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1767959810.sol",
       "solcConfig": {
@@ -578,7 +578,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1767961708.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1767961708.sol",
       "solcConfig": {
@@ -614,7 +614,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1767966571.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1767966571.sol",
       "solcConfig": {
@@ -650,7 +650,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1768022796.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1768022796.sol",
       "solcConfig": {
@@ -686,7 +686,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1768030965.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1768030965.sol",
       "solcConfig": {
@@ -722,7 +722,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/TaskManager_1768039142.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "f1200e0ecc54857736c4c1409722e48d",
       "sourceName": "contracts/crud/TaskManager_1768039142.sol",
       "solcConfig": {
@@ -758,7 +758,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/Token_1767865368.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "7e1870f8468538da1abf684e0f9871c5",
       "sourceName": "contracts/crud/Token_1767865368.sol",
       "solcConfig": {
@@ -794,7 +794,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/Token_1767948719.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "d234e5034dbae09065b34fde53a1b846",
       "sourceName": "contracts/crud/Token_1767948719.sol",
       "solcConfig": {
@@ -830,7 +830,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/Token_1767977740.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "5bebc2082f547fc145d15a6d046f4df9",
       "sourceName": "contracts/crud/Token_1767977740.sol",
       "solcConfig": {
@@ -866,7 +866,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/UserRegistry_1767842390.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "07e38783463bc37f3f0d762b389db421",
       "sourceName": "contracts/crud/UserRegistry_1767842390.sol",
       "solcConfig": {
@@ -902,7 +902,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/UserRegistry_1767847806.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "07e38783463bc37f3f0d762b389db421",
       "sourceName": "contracts/crud/UserRegistry_1767847806.sol",
       "solcConfig": {
@@ -938,7 +938,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/UserRegistry_1767914054.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "07e38783463bc37f3f0d762b389db421",
       "sourceName": "contracts/crud/UserRegistry_1767914054.sol",
       "solcConfig": {
@@ -974,7 +974,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/UserRegistry_1767999134.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "07e38783463bc37f3f0d762b389db421",
       "sourceName": "contracts/crud/UserRegistry_1767999134.sol",
       "solcConfig": {
@@ -1010,7 +1010,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/UserRegistry_1768027757.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "07e38783463bc37f3f0d762b389db421",
       "sourceName": "contracts/crud/UserRegistry_1768027757.sol",
       "solcConfig": {
@@ -1046,7 +1046,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/UserRegistry_1768031714.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "07e38783463bc37f3f0d762b389db421",
       "sourceName": "contracts/crud/UserRegistry_1768031714.sol",
       "solcConfig": {
@@ -1082,7 +1082,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/UserRegistry_1768045788.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "07e38783463bc37f3f0d762b389db421",
       "sourceName": "contracts/crud/UserRegistry_1768045788.sol",
       "solcConfig": {
@@ -1118,7 +1118,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/crud/UserRegistry_1768050103.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "07e38783463bc37f3f0d762b389db421",
       "sourceName": "contracts/crud/UserRegistry_1768050103.sol",
       "solcConfig": {
@@ -1154,7 +1154,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1767826849.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1767826849.sol",
       "solcConfig": {
@@ -1190,7 +1190,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1767845479.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1767845479.sol",
       "solcConfig": {
@@ -1226,7 +1226,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1767851617.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822027,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1767851617.sol",
       "solcConfig": {
@@ -1262,7 +1262,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1767883507.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1767883507.sol",
       "solcConfig": {
@@ -1298,7 +1298,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1767889617.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1767889617.sol",
       "solcConfig": {
@@ -1334,7 +1334,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1767900995.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1767900995.sol",
       "solcConfig": {
@@ -1370,7 +1370,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1767956151.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1767956151.sol",
       "solcConfig": {
@@ -1406,7 +1406,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1768038425.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1768038425.sol",
       "solcConfig": {
@@ -1442,7 +1442,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/security/AccessControl_1768041579.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "0eaa5305a95fb8e5fcf5f52721f44b8b",
       "sourceName": "contracts/security/AccessControl_1768041579.sol",
       "solcConfig": {
@@ -1478,7 +1478,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/Analytics_1767859051.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "258af6e808cc37429a1a33202bad7d93",
       "sourceName": "contracts/utils/Analytics_1767859051.sol",
       "solcConfig": {
@@ -1514,7 +1514,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/Analytics_1767880521.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "258af6e808cc37429a1a33202bad7d93",
       "sourceName": "contracts/utils/Analytics_1767880521.sol",
       "solcConfig": {
@@ -1550,7 +1550,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/Analytics_1767895032.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "258af6e808cc37429a1a33202bad7d93",
       "sourceName": "contracts/utils/Analytics_1767895032.sol",
       "solcConfig": {
@@ -1586,7 +1586,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/Analytics_1767903697.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "258af6e808cc37429a1a33202bad7d93",
       "sourceName": "contracts/utils/Analytics_1767903697.sol",
       "solcConfig": {
@@ -1622,7 +1622,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/Analytics_1767970732.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "258af6e808cc37429a1a33202bad7d93",
       "sourceName": "contracts/utils/Analytics_1767970732.sol",
       "solcConfig": {
@@ -1658,7 +1658,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/Analytics_1768037877.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "258af6e808cc37429a1a33202bad7d93",
       "sourceName": "contracts/utils/Analytics_1768037877.sol",
       "solcConfig": {
@@ -1694,7 +1694,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/Analytics_1768040332.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "258af6e808cc37429a1a33202bad7d93",
       "sourceName": "contracts/utils/Analytics_1768040332.sol",
       "solcConfig": {
@@ -1730,7 +1730,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1767828151.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1767828151.sol",
       "solcConfig": {
@@ -1766,7 +1766,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1767857040.sol": {
-      "lastModificationDate": 1768053618429,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1767857040.sol",
       "solcConfig": {
@@ -1802,7 +1802,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1767901934.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1767901934.sol",
       "solcConfig": {
@@ -1838,7 +1838,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1767905685.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1767905685.sol",
       "solcConfig": {
@@ -1874,7 +1874,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1767938428.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1767938428.sol",
       "solcConfig": {
@@ -1910,7 +1910,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1767981515.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1767981515.sol",
       "solcConfig": {
@@ -1946,7 +1946,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1767997268.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1767997268.sol",
       "solcConfig": {
@@ -1982,7 +1982,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1768017381.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1768017381.sol",
       "solcConfig": {
@@ -2018,7 +2018,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1768028390.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1768028390.sol",
       "solcConfig": {
@@ -2054,7 +2054,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1768029575.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1768029575.sol",
       "solcConfig": {
@@ -2090,7 +2090,7 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1768038779.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1768038779.sol",
       "solcConfig": {
@@ -2126,9 +2126,45 @@
       ]
     },
     "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1768051969.sol": {
-      "lastModificationDate": 1768053618430,
+      "lastModificationDate": 1768054822028,
       "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
       "sourceName": "contracts/utils/EventLogger_1768051969.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "EventLogger"
+      ]
+    },
+    "/home/runner/work/solidity-notebook/solidity-notebook/contracts/utils/EventLogger_1768054837.sol": {
+      "lastModificationDate": 1768054837508,
+      "contentHash": "261c7e8eced1c852b3ea6fd3f1bf851c",
+      "sourceName": "contracts/utils/EventLogger_1768054837.sol",
       "solcConfig": {
         "version": "0.8.24",
         "settings": {
