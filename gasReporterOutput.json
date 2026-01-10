@@ -3005,6 +3005,61 @@
     "callData": [],
     "gasData": [],
     "numberOfCalls": 0
+   },
+   "utils/EventLogger_1768029575.sol:EventLogger_3206b2c6": {
+    "key": "3206b2c6",
+    "isCall": true,
+    "contract": "utils/EventLogger_1768029575.sol:EventLogger",
+    "method": "getLog",
+    "fnSig": "getLog(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/EventLogger_1768029575.sol:EventLogger_618033db": {
+    "key": "618033db",
+    "isCall": true,
+    "contract": "utils/EventLogger_1768029575.sol:EventLogger",
+    "method": "getLogCount",
+    "fnSig": "getLogCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/EventLogger_1768029575.sol:EventLogger_e52e64f9": {
+    "key": "e52e64f9",
+    "isCall": true,
+    "contract": "utils/EventLogger_1768029575.sol:EventLogger",
+    "method": "getRecentLogs",
+    "fnSig": "getRecentLogs(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/EventLogger_1768029575.sol:EventLogger_8d43d68c": {
+    "key": "8d43d68c",
+    "isCall": false,
+    "contract": "utils/EventLogger_1768029575.sol:EventLogger",
+    "method": "logAction",
+    "fnSig": "logAction(string,bytes)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/EventLogger_1768029575.sol:EventLogger_e79899bd": {
+    "key": "e79899bd",
+    "isCall": true,
+    "contract": "utils/EventLogger_1768029575.sol:EventLogger",
+    "method": "logs",
+    "fnSig": "logs(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
    }
   },
   "deployments": [
@@ -3225,6 +3280,11 @@
    },
    {
     "name": "utils/EventLogger_1768028390.sol:EventLogger",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "utils/EventLogger_1768029575.sol:EventLogger",
     "gasData": [],
     "callData": []
    }
