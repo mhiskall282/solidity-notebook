@@ -2819,6 +2819,94 @@
     "gasData": [],
     "numberOfCalls": 0
    },
+   "crud/UserRegistry_1768063284.sol:UserRegistry_b5ffbbcc": {
+    "key": "b5ffbbcc",
+    "isCall": true,
+    "contract": "crud/UserRegistry_1768063284.sol:UserRegistry",
+    "method": "addressToUserId",
+    "fnSig": "addressToUserId(address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/UserRegistry_1768063284.sol:UserRegistry_87b162b5": {
+    "key": "87b162b5",
+    "isCall": false,
+    "contract": "crud/UserRegistry_1768063284.sol:UserRegistry",
+    "method": "createUser",
+    "fnSig": "createUser(string,string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/UserRegistry_1768063284.sol:UserRegistry_38f14845": {
+    "key": "38f14845",
+    "isCall": false,
+    "contract": "crud/UserRegistry_1768063284.sol:UserRegistry",
+    "method": "deleteUser",
+    "fnSig": "deleteUser(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/UserRegistry_1768063284.sol:UserRegistry_4ed6bd1a": {
+    "key": "4ed6bd1a",
+    "isCall": true,
+    "contract": "crud/UserRegistry_1768063284.sol:UserRegistry",
+    "method": "getAllActiveUsers",
+    "fnSig": "getAllActiveUsers()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/UserRegistry_1768063284.sol:UserRegistry_b0467deb": {
+    "key": "b0467deb",
+    "isCall": true,
+    "contract": "crud/UserRegistry_1768063284.sol:UserRegistry",
+    "method": "getUser",
+    "fnSig": "getUser(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/UserRegistry_1768063284.sol:UserRegistry_7b7c3a9b": {
+    "key": "7b7c3a9b",
+    "isCall": false,
+    "contract": "crud/UserRegistry_1768063284.sol:UserRegistry",
+    "method": "updateUser",
+    "fnSig": "updateUser(uint256,string,string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/UserRegistry_1768063284.sol:UserRegistry_07973ccf": {
+    "key": "07973ccf",
+    "isCall": true,
+    "contract": "crud/UserRegistry_1768063284.sol:UserRegistry",
+    "method": "userCount",
+    "fnSig": "userCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/UserRegistry_1768063284.sol:UserRegistry_365b98b2": {
+    "key": "365b98b2",
+    "isCall": true,
+    "contract": "crud/UserRegistry_1768063284.sol:UserRegistry",
+    "method": "users",
+    "fnSig": "users(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "security/AccessControl_1767826849.sol:AccessControl_75b238fc": {
     "key": "75b238fc",
     "isCall": true,
@@ -4635,6 +4723,11 @@
    },
    {
     "name": "crud/UserRegistry_1768050103.sol:UserRegistry",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "crud/UserRegistry_1768063284.sol:UserRegistry",
     "gasData": [],
     "callData": []
    },
