@@ -36,6 +36,94 @@
  },
  "data": {
   "methods": {
+   "UserRegistry_b5ffbbcc": {
+    "key": "b5ffbbcc",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "addressToUserId",
+    "fnSig": "addressToUserId(address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_87b162b5": {
+    "key": "87b162b5",
+    "isCall": false,
+    "contract": "UserRegistry",
+    "method": "createUser",
+    "fnSig": "createUser(string,string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_38f14845": {
+    "key": "38f14845",
+    "isCall": false,
+    "contract": "UserRegistry",
+    "method": "deleteUser",
+    "fnSig": "deleteUser(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_4ed6bd1a": {
+    "key": "4ed6bd1a",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "getAllActiveUsers",
+    "fnSig": "getAllActiveUsers()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_b0467deb": {
+    "key": "b0467deb",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "getUser",
+    "fnSig": "getUser(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_7b7c3a9b": {
+    "key": "7b7c3a9b",
+    "isCall": false,
+    "contract": "UserRegistry",
+    "method": "updateUser",
+    "fnSig": "updateUser(uint256,string,string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_07973ccf": {
+    "key": "07973ccf",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "userCount",
+    "fnSig": "userCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "UserRegistry_365b98b2": {
+    "key": "365b98b2",
+    "isCall": true,
+    "contract": "UserRegistry",
+    "method": "users",
+    "fnSig": "users(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "security/AccessControl_1768038425.sol:AccessControl_75b238fc": {
     "key": "75b238fc",
     "isCall": true,
@@ -1634,6 +1722,11 @@
    },
    {
     "name": "security/AccessControl_1768081932.sol:AccessControl",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "UserRegistry",
     "gasData": [],
     "callData": []
    },
