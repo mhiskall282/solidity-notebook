@@ -268,6 +268,72 @@
     "min": 35340,
     "max": 35340
    },
+   "TaskManager_07f52ad8": {
+    "key": "07f52ad8",
+    "isCall": false,
+    "contract": "TaskManager",
+    "method": "createTask",
+    "fnSig": "createTask(string,string,address,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "TaskManager_1d65e77e": {
+    "key": "1d65e77e",
+    "isCall": true,
+    "contract": "TaskManager",
+    "method": "getTask",
+    "fnSig": "getTask(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "TaskManager_1579259b": {
+    "key": "1579259b",
+    "isCall": true,
+    "contract": "TaskManager",
+    "method": "getTasksByStatus",
+    "fnSig": "getTasksByStatus(uint8)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "TaskManager_b6cb58a5": {
+    "key": "b6cb58a5",
+    "isCall": true,
+    "contract": "TaskManager",
+    "method": "taskCount",
+    "fnSig": "taskCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "TaskManager_8d977672": {
+    "key": "8d977672",
+    "isCall": true,
+    "contract": "TaskManager",
+    "method": "tasks",
+    "fnSig": "tasks(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "TaskManager_ab9b6811": {
+    "key": "ab9b6811",
+    "isCall": false,
+    "contract": "TaskManager",
+    "method": "updateTaskStatus",
+    "fnSig": "updateTaskStatus(uint256,uint8)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "AccessControl_75b238fc": {
     "key": "75b238fc",
     "isCall": true,
@@ -2016,6 +2082,11 @@
     "min": 540682,
     "max": 540682,
     "percent": 0.9
+   },
+   {
+    "name": "TaskManager",
+    "gasData": [],
+    "callData": []
    },
    {
     "name": "utils/EventLogger_1768536712.sol:EventLogger",
