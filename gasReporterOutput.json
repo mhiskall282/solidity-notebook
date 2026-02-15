@@ -642,10 +642,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "AccessControl_75b238fc": {
+   "security/AccessControl_1771144692.sol:AccessControl_75b238fc": {
     "key": "75b238fc",
     "isCall": true,
-    "contract": "AccessControl",
+    "contract": "security/AccessControl_1771144692.sol:AccessControl",
     "method": "ADMIN_ROLE",
     "fnSig": "ADMIN_ROLE()",
     "intrinsicGas": [],
@@ -653,10 +653,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "AccessControl_282c51f3": {
+   "security/AccessControl_1771144692.sol:AccessControl_282c51f3": {
     "key": "282c51f3",
     "isCall": true,
-    "contract": "AccessControl",
+    "contract": "security/AccessControl_1771144692.sol:AccessControl",
     "method": "BURNER_ROLE",
     "fnSig": "BURNER_ROLE()",
     "intrinsicGas": [],
@@ -664,10 +664,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "AccessControl_d5391393": {
+   "security/AccessControl_1771144692.sol:AccessControl_d5391393": {
     "key": "d5391393",
     "isCall": true,
-    "contract": "AccessControl",
+    "contract": "security/AccessControl_1771144692.sol:AccessControl",
     "method": "MINTER_ROLE",
     "fnSig": "MINTER_ROLE()",
     "intrinsicGas": [],
@@ -675,10 +675,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "AccessControl_2f2ff15d": {
+   "security/AccessControl_1771144692.sol:AccessControl_2f2ff15d": {
     "key": "2f2ff15d",
     "isCall": false,
-    "contract": "AccessControl",
+    "contract": "security/AccessControl_1771144692.sol:AccessControl",
     "method": "grantRole",
     "fnSig": "grantRole(bytes32,address)",
     "intrinsicGas": [],
@@ -686,10 +686,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "AccessControl_91d14854": {
+   "security/AccessControl_1771144692.sol:AccessControl_91d14854": {
     "key": "91d14854",
     "isCall": true,
-    "contract": "AccessControl",
+    "contract": "security/AccessControl_1771144692.sol:AccessControl",
     "method": "hasRole",
     "fnSig": "hasRole(bytes32,address)",
     "intrinsicGas": [],
@@ -697,10 +697,76 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "AccessControl_d547741f": {
+   "security/AccessControl_1771144692.sol:AccessControl_d547741f": {
     "key": "d547741f",
     "isCall": false,
-    "contract": "AccessControl",
+    "contract": "security/AccessControl_1771144692.sol:AccessControl",
+    "method": "revokeRole",
+    "fnSig": "revokeRole(bytes32,address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1771156010.sol:AccessControl_75b238fc": {
+    "key": "75b238fc",
+    "isCall": true,
+    "contract": "security/AccessControl_1771156010.sol:AccessControl",
+    "method": "ADMIN_ROLE",
+    "fnSig": "ADMIN_ROLE()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1771156010.sol:AccessControl_282c51f3": {
+    "key": "282c51f3",
+    "isCall": true,
+    "contract": "security/AccessControl_1771156010.sol:AccessControl",
+    "method": "BURNER_ROLE",
+    "fnSig": "BURNER_ROLE()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1771156010.sol:AccessControl_d5391393": {
+    "key": "d5391393",
+    "isCall": true,
+    "contract": "security/AccessControl_1771156010.sol:AccessControl",
+    "method": "MINTER_ROLE",
+    "fnSig": "MINTER_ROLE()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1771156010.sol:AccessControl_2f2ff15d": {
+    "key": "2f2ff15d",
+    "isCall": false,
+    "contract": "security/AccessControl_1771156010.sol:AccessControl",
+    "method": "grantRole",
+    "fnSig": "grantRole(bytes32,address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1771156010.sol:AccessControl_91d14854": {
+    "key": "91d14854",
+    "isCall": true,
+    "contract": "security/AccessControl_1771156010.sol:AccessControl",
+    "method": "hasRole",
+    "fnSig": "hasRole(bytes32,address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "security/AccessControl_1771156010.sol:AccessControl_d547741f": {
+    "key": "d547741f",
+    "isCall": false,
+    "contract": "security/AccessControl_1771156010.sol:AccessControl",
     "method": "revokeRole",
     "fnSig": "revokeRole(bytes32,address)",
     "intrinsicGas": [],
@@ -2471,11 +2537,6 @@
   },
   "deployments": [
    {
-    "name": "AccessControl",
-    "gasData": [],
-    "callData": []
-   },
-   {
     "name": "crud/UserRegistry_1771113379.sol:UserRegistry",
     "gasData": [],
     "callData": []
@@ -2520,6 +2581,16 @@
     "min": 540682,
     "max": 540682,
     "percent": 0.9
+   },
+   {
+    "name": "security/AccessControl_1771144692.sol:AccessControl",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "security/AccessControl_1771156010.sol:AccessControl",
+    "gasData": [],
+    "callData": []
    },
    {
     "name": "utils/EventLogger_1769801102.sol:EventLogger",
