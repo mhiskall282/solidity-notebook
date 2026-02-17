@@ -36,6 +36,105 @@
  },
  "data": {
   "methods": {
+   "Manager_1771286567_2d1fb389": {
+    "key": "2d1fb389",
+    "isCall": false,
+    "contract": "Manager_1771286567",
+    "method": "authorize",
+    "fnSig": "authorize(address,bool)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Manager_1771286567_b9181611": {
+    "key": "b9181611",
+    "isCall": true,
+    "contract": "Manager_1771286567",
+    "method": "authorized",
+    "fnSig": "authorized(address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Manager_1771286567_02d05d3f": {
+    "key": "02d05d3f",
+    "isCall": true,
+    "contract": "Manager_1771286567",
+    "method": "creator",
+    "fnSig": "creator()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Manager_1771286567_5a9b0b89": {
+    "key": "5a9b0b89",
+    "isCall": true,
+    "contract": "Manager_1771286567",
+    "method": "getInfo",
+    "fnSig": "getInfo()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Manager_1771286567_af640d0f": {
+    "key": "af640d0f",
+    "isCall": true,
+    "contract": "Manager_1771286567",
+    "method": "id",
+    "fnSig": "id()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Manager_1771286567_22f3e2d4": {
+    "key": "22f3e2d4",
+    "isCall": true,
+    "contract": "Manager_1771286567",
+    "method": "isActive",
+    "fnSig": "isActive()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Manager_1771286567_06fdde03": {
+    "key": "06fdde03",
+    "isCall": true,
+    "contract": "Manager_1771286567",
+    "method": "name",
+    "fnSig": "name()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Manager_1771286567_c47f0027": {
+    "key": "c47f0027",
+    "isCall": false,
+    "contract": "Manager_1771286567",
+    "method": "setName",
+    "fnSig": "setName(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Manager_1771286567_29c68dc1": {
+    "key": "29c68dc1",
+    "isCall": false,
+    "contract": "Manager_1771286567",
+    "method": "toggleActive",
+    "fnSig": "toggleActive()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "Analytics_84127b63": {
     "key": "84127b63",
     "isCall": true,
@@ -1734,6 +1833,11 @@
   "deployments": [
    {
     "name": "Analytics",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "Manager_1771286567",
     "gasData": [],
     "callData": []
    },
