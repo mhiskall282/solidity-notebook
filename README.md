@@ -4,8 +4,8 @@
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![Automation](https://img.shields.io/badge/automation-every%205min-blue)
-![Contracts](https://img.shields.io/badge/contracts-33-orange)
-![Tests](https://img.shields.io/badge/tests-251-purple)
+![Contracts](https://img.shields.io/badge/contracts-30-orange)
+![Tests](https://img.shields.io/badge/tests-250-purple)
 
 ---
 
@@ -28,12 +28,12 @@ This repository is an **automated learning laboratory** for Solidity smart contr
 
 | Metric | Count |
 |--------|-------|
-| 📜 Smart Contracts | **33** |
-| 🧪 Test Files | **251** |
+| 📜 Smart Contracts | **30** |
+| 🧪 Test Files | **250** |
 | 🚀 Scripts | **20** |
 | 📚 Documentation | **246** |
-| 🔄 Total Commits | **1781** |
-| ⏰ Last Update | 2026-02-20 19:45 UTC |
+| 🔄 Total Commits | **1782** |
+| ⏰ Last Update | 2026-02-20 20:03 UTC |
 
 ---
 
@@ -156,7 +156,7 @@ npx hardhat run scripts/deploy/deploy_*.js --network localhost
 
 ### Test Categories
 
-- **CRUD Tests** (26 files): Create, Read, Update, Delete operations
+- **CRUD Tests** (25 files): Create, Read, Update, Delete operations
 - **Unit Tests** (0 files): Individual contract functions
 - **Integration Tests** (112 files): Multi-contract interactions
 - **E2E Tests** (113 files): Complete user workflows
@@ -264,8 +264,8 @@ This is an automated learning repository, but suggestions are welcome!
 ## 📊 Activity Heatmap
 
 ```
-Contracts: ████████████████████ 33
-Tests:     ████████████████░░░░ 251
+Contracts: ████████████████████ 30
+Tests:     ████████████████░░░░ 250
 Scripts:   ████████░░░░░░░░░░░░ 20
 Docs:      ██████░░░░░░░░░░░░░░ 246
 ```
@@ -292,7 +292,7 @@ If you find this repository helpful for learning Solidity, please consider givin
 
 ---
 
-**Last automated update**: 2026-02-20 19:45:21 UTC  
+**Last automated update**: 2026-02-20 20:03:30 UTC  
 **Status**: 🟢 Active & Learning  
 **Next update**: In ~5 minutes
 
