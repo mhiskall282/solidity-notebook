@@ -36,6 +36,105 @@
  },
  "data": {
   "methods": {
+   "Controller_1771705121_2d1fb389": {
+    "key": "2d1fb389",
+    "isCall": false,
+    "contract": "Controller_1771705121",
+    "method": "authorize",
+    "fnSig": "authorize(address,bool)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Controller_1771705121_b9181611": {
+    "key": "b9181611",
+    "isCall": true,
+    "contract": "Controller_1771705121",
+    "method": "authorized",
+    "fnSig": "authorized(address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Controller_1771705121_02d05d3f": {
+    "key": "02d05d3f",
+    "isCall": true,
+    "contract": "Controller_1771705121",
+    "method": "creator",
+    "fnSig": "creator()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Controller_1771705121_5a9b0b89": {
+    "key": "5a9b0b89",
+    "isCall": true,
+    "contract": "Controller_1771705121",
+    "method": "getInfo",
+    "fnSig": "getInfo()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Controller_1771705121_af640d0f": {
+    "key": "af640d0f",
+    "isCall": true,
+    "contract": "Controller_1771705121",
+    "method": "id",
+    "fnSig": "id()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Controller_1771705121_22f3e2d4": {
+    "key": "22f3e2d4",
+    "isCall": true,
+    "contract": "Controller_1771705121",
+    "method": "isActive",
+    "fnSig": "isActive()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Controller_1771705121_06fdde03": {
+    "key": "06fdde03",
+    "isCall": true,
+    "contract": "Controller_1771705121",
+    "method": "name",
+    "fnSig": "name()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Controller_1771705121_c47f0027": {
+    "key": "c47f0027",
+    "isCall": false,
+    "contract": "Controller_1771705121",
+    "method": "setName",
+    "fnSig": "setName(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Controller_1771705121_29c68dc1": {
+    "key": "29c68dc1",
+    "isCall": false,
+    "contract": "Controller_1771705121",
+    "method": "toggleActive",
+    "fnSig": "toggleActive()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "crud/DataStorage_1771621423.sol:DataStorage_34461067": {
     "key": "34461067",
     "isCall": true,
@@ -2779,6 +2878,11 @@
   "deployments": [
    {
     "name": "AccessControl",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "Controller_1771705121",
     "gasData": [],
     "callData": []
    },
