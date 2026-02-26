@@ -36,6 +36,83 @@
  },
  "data": {
   "methods": {
+   "DataStorage_34461067": {
+    "key": "34461067",
+    "isCall": true,
+    "contract": "DataStorage",
+    "method": "records",
+    "fnSig": "records(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "DataStorage_88cdf2e0": {
+    "key": "88cdf2e0",
+    "isCall": false,
+    "contract": "DataStorage",
+    "method": "createRecord",
+    "fnSig": "createRecord(bytes32,string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "DataStorage_51096b02": {
+    "key": "51096b02",
+    "isCall": true,
+    "contract": "DataStorage",
+    "method": "getUserRecords",
+    "fnSig": "getUserRecords(address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "DataStorage_5bbe446a": {
+    "key": "5bbe446a",
+    "isCall": false,
+    "contract": "DataStorage",
+    "method": "invalidateRecord",
+    "fnSig": "invalidateRecord(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "DataStorage_900407bc": {
+    "key": "900407bc",
+    "isCall": true,
+    "contract": "DataStorage",
+    "method": "recordCount",
+    "fnSig": "recordCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "DataStorage_1c631466": {
+    "key": "1c631466",
+    "isCall": false,
+    "contract": "DataStorage",
+    "method": "updateRecord",
+    "fnSig": "updateRecord(uint256,string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "DataStorage_e85d28b9": {
+    "key": "e85d28b9",
+    "isCall": true,
+    "contract": "DataStorage",
+    "method": "userRecords",
+    "fnSig": "userRecords(address,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "ProductStore_125b0b34": {
     "key": "125b0b34",
     "isCall": false,
@@ -1766,6 +1843,11 @@
    }
   },
   "deployments": [
+   {
+    "name": "DataStorage",
+    "gasData": [],
+    "callData": []
+   },
    {
     "name": "ProductStore",
     "gasData": [
