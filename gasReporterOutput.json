@@ -146,10 +146,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "TaskManager_07f52ad8": {
+   "crud/TaskManager_1772562604.sol:TaskManager_07f52ad8": {
     "key": "07f52ad8",
     "isCall": false,
-    "contract": "TaskManager",
+    "contract": "crud/TaskManager_1772562604.sol:TaskManager",
     "method": "createTask",
     "fnSig": "createTask(string,string,address,uint256)",
     "intrinsicGas": [],
@@ -157,10 +157,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "TaskManager_1d65e77e": {
+   "crud/TaskManager_1772562604.sol:TaskManager_1d65e77e": {
     "key": "1d65e77e",
     "isCall": true,
-    "contract": "TaskManager",
+    "contract": "crud/TaskManager_1772562604.sol:TaskManager",
     "method": "getTask",
     "fnSig": "getTask(uint256)",
     "intrinsicGas": [],
@@ -168,10 +168,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "TaskManager_1579259b": {
+   "crud/TaskManager_1772562604.sol:TaskManager_1579259b": {
     "key": "1579259b",
     "isCall": true,
-    "contract": "TaskManager",
+    "contract": "crud/TaskManager_1772562604.sol:TaskManager",
     "method": "getTasksByStatus",
     "fnSig": "getTasksByStatus(uint8)",
     "intrinsicGas": [],
@@ -179,10 +179,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "TaskManager_b6cb58a5": {
+   "crud/TaskManager_1772562604.sol:TaskManager_b6cb58a5": {
     "key": "b6cb58a5",
     "isCall": true,
-    "contract": "TaskManager",
+    "contract": "crud/TaskManager_1772562604.sol:TaskManager",
     "method": "taskCount",
     "fnSig": "taskCount()",
     "intrinsicGas": [],
@@ -190,10 +190,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "TaskManager_8d977672": {
+   "crud/TaskManager_1772562604.sol:TaskManager_8d977672": {
     "key": "8d977672",
     "isCall": true,
-    "contract": "TaskManager",
+    "contract": "crud/TaskManager_1772562604.sol:TaskManager",
     "method": "tasks",
     "fnSig": "tasks(uint256)",
     "intrinsicGas": [],
@@ -201,10 +201,76 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "TaskManager_ab9b6811": {
+   "crud/TaskManager_1772562604.sol:TaskManager_ab9b6811": {
     "key": "ab9b6811",
     "isCall": false,
-    "contract": "TaskManager",
+    "contract": "crud/TaskManager_1772562604.sol:TaskManager",
+    "method": "updateTaskStatus",
+    "fnSig": "updateTaskStatus(uint256,uint8)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/TaskManager_1772567726.sol:TaskManager_07f52ad8": {
+    "key": "07f52ad8",
+    "isCall": false,
+    "contract": "crud/TaskManager_1772567726.sol:TaskManager",
+    "method": "createTask",
+    "fnSig": "createTask(string,string,address,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/TaskManager_1772567726.sol:TaskManager_1d65e77e": {
+    "key": "1d65e77e",
+    "isCall": true,
+    "contract": "crud/TaskManager_1772567726.sol:TaskManager",
+    "method": "getTask",
+    "fnSig": "getTask(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/TaskManager_1772567726.sol:TaskManager_1579259b": {
+    "key": "1579259b",
+    "isCall": true,
+    "contract": "crud/TaskManager_1772567726.sol:TaskManager",
+    "method": "getTasksByStatus",
+    "fnSig": "getTasksByStatus(uint8)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/TaskManager_1772567726.sol:TaskManager_b6cb58a5": {
+    "key": "b6cb58a5",
+    "isCall": true,
+    "contract": "crud/TaskManager_1772567726.sol:TaskManager",
+    "method": "taskCount",
+    "fnSig": "taskCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/TaskManager_1772567726.sol:TaskManager_8d977672": {
+    "key": "8d977672",
+    "isCall": true,
+    "contract": "crud/TaskManager_1772567726.sol:TaskManager",
+    "method": "tasks",
+    "fnSig": "tasks(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "crud/TaskManager_1772567726.sol:TaskManager_ab9b6811": {
+    "key": "ab9b6811",
+    "isCall": false,
+    "contract": "crud/TaskManager_1772567726.sol:TaskManager",
     "method": "updateTaskStatus",
     "fnSig": "updateTaskStatus(uint256,uint8)",
     "intrinsicGas": [],
@@ -2205,17 +2271,22 @@
     "callData": []
    },
    {
+    "name": "crud/TaskManager_1772562604.sol:TaskManager",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "crud/TaskManager_1772567726.sol:TaskManager",
+    "gasData": [],
+    "callData": []
+   },
+   {
     "name": "security/AccessControl_1772531793.sol:AccessControl",
     "gasData": [],
     "callData": []
    },
    {
     "name": "security/AccessControl_1772560124.sol:AccessControl",
-    "gasData": [],
-    "callData": []
-   },
-   {
-    "name": "TaskManager",
     "gasData": [],
     "callData": []
    },
