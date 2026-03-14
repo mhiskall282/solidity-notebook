@@ -36,6 +36,105 @@
  },
  "data": {
   "methods": {
+   "Handler_1773496893_2d1fb389": {
+    "key": "2d1fb389",
+    "isCall": false,
+    "contract": "Handler_1773496893",
+    "method": "authorize",
+    "fnSig": "authorize(address,bool)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Handler_1773496893_b9181611": {
+    "key": "b9181611",
+    "isCall": true,
+    "contract": "Handler_1773496893",
+    "method": "authorized",
+    "fnSig": "authorized(address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Handler_1773496893_02d05d3f": {
+    "key": "02d05d3f",
+    "isCall": true,
+    "contract": "Handler_1773496893",
+    "method": "creator",
+    "fnSig": "creator()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Handler_1773496893_5a9b0b89": {
+    "key": "5a9b0b89",
+    "isCall": true,
+    "contract": "Handler_1773496893",
+    "method": "getInfo",
+    "fnSig": "getInfo()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Handler_1773496893_af640d0f": {
+    "key": "af640d0f",
+    "isCall": true,
+    "contract": "Handler_1773496893",
+    "method": "id",
+    "fnSig": "id()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Handler_1773496893_22f3e2d4": {
+    "key": "22f3e2d4",
+    "isCall": true,
+    "contract": "Handler_1773496893",
+    "method": "isActive",
+    "fnSig": "isActive()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Handler_1773496893_06fdde03": {
+    "key": "06fdde03",
+    "isCall": true,
+    "contract": "Handler_1773496893",
+    "method": "name",
+    "fnSig": "name()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Handler_1773496893_c47f0027": {
+    "key": "c47f0027",
+    "isCall": false,
+    "contract": "Handler_1773496893",
+    "method": "setName",
+    "fnSig": "setName(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Handler_1773496893_29c68dc1": {
+    "key": "29c68dc1",
+    "isCall": false,
+    "contract": "Handler_1773496893",
+    "method": "toggleActive",
+    "fnSig": "toggleActive()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "crud/TaskManager_1773476408.sol:TaskManager_07f52ad8": {
     "key": "07f52ad8",
     "isCall": false,
@@ -2271,6 +2370,11 @@
    },
    {
     "name": "crud/UserRegistry_1773465574.sol:UserRegistry",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "Handler_1773496893",
     "gasData": [],
     "callData": []
    },
