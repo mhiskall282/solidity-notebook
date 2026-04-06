@@ -36,6 +36,84 @@
  },
  "data": {
   "methods": {
+   "ProductStore_125b0b34": {
+    "key": "125b0b34",
+    "isCall": false,
+    "contract": "ProductStore",
+    "method": "addProduct",
+    "fnSig": "addProduct(string,uint256,uint256)",
+    "intrinsicGas": [
+     21884,
+     21872
+    ],
+    "callData": [
+     0,
+     0
+    ],
+    "gasData": [
+     158824,
+     158836
+    ],
+    "numberOfCalls": 2,
+    "executionGasAverage": 158830,
+    "calldataGasAverage": 0,
+    "min": 158824,
+    "max": 158836
+   },
+   "ProductStore_e0f6ef87": {
+    "key": "e0f6ef87",
+    "isCall": true,
+    "contract": "ProductStore",
+    "method": "productCount",
+    "fnSig": "productCount()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "ProductStore_7acc0b20": {
+    "key": "7acc0b20",
+    "isCall": true,
+    "contract": "ProductStore",
+    "method": "products",
+    "fnSig": "products(uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "ProductStore_a0440426": {
+    "key": "a0440426",
+    "isCall": false,
+    "contract": "ProductStore",
+    "method": "purchaseProduct",
+    "fnSig": "purchaseProduct(uint256,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "ProductStore_f85292ca": {
+    "key": "f85292ca",
+    "isCall": false,
+    "contract": "ProductStore",
+    "method": "updateProduct",
+    "fnSig": "updateProduct(uint256,uint256,uint256)",
+    "intrinsicGas": [
+     21544
+    ],
+    "callData": [
+     0
+    ],
+    "gasData": [
+     35340
+    ],
+    "numberOfCalls": 1,
+    "executionGasAverage": 35340,
+    "calldataGasAverage": 0,
+    "min": 35340,
+    "max": 35340
+   },
    "TaskManager_07f52ad8": {
     "key": "07f52ad8",
     "isCall": false,
@@ -1754,6 +1832,22 @@
    }
   },
   "deployments": [
+   {
+    "name": "ProductStore",
+    "gasData": [
+     540682,
+     540682
+    ],
+    "callData": [
+     0,
+     0
+    ],
+    "executionGasAverage": 540682,
+    "calldataGasAverage": 0,
+    "min": 540682,
+    "max": 540682,
+    "percent": 0.9
+   },
    {
     "name": "TaskManager",
     "gasData": [],
