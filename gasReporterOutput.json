@@ -707,10 +707,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "Analytics_84127b63": {
+   "utils/Analytics_1782166642.sol:Analytics_84127b63": {
     "key": "84127b63",
     "isCall": true,
-    "contract": "Analytics",
+    "contract": "utils/Analytics_1782166642.sol:Analytics",
     "method": "getLatestMetric",
     "fnSig": "getLatestMetric(string)",
     "intrinsicGas": [],
@@ -718,10 +718,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "Analytics_61a7cc30": {
+   "utils/Analytics_1782166642.sol:Analytics_61a7cc30": {
     "key": "61a7cc30",
     "isCall": true,
-    "contract": "Analytics",
+    "contract": "utils/Analytics_1782166642.sol:Analytics",
     "method": "getMetrics",
     "fnSig": "getMetrics(string)",
     "intrinsicGas": [],
@@ -729,10 +729,10 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "Analytics_c426cdcf": {
+   "utils/Analytics_1782166642.sol:Analytics_c426cdcf": {
     "key": "c426cdcf",
     "isCall": true,
-    "contract": "Analytics",
+    "contract": "utils/Analytics_1782166642.sol:Analytics",
     "method": "metrics",
     "fnSig": "metrics(bytes32,uint256)",
     "intrinsicGas": [],
@@ -740,10 +740,54 @@
     "gasData": [],
     "numberOfCalls": 0
    },
-   "Analytics_439a54b9": {
+   "utils/Analytics_1782166642.sol:Analytics_439a54b9": {
     "key": "439a54b9",
     "isCall": false,
-    "contract": "Analytics",
+    "contract": "utils/Analytics_1782166642.sol:Analytics",
+    "method": "recordMetric",
+    "fnSig": "recordMetric(string,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/Analytics_1782223611.sol:Analytics_84127b63": {
+    "key": "84127b63",
+    "isCall": true,
+    "contract": "utils/Analytics_1782223611.sol:Analytics",
+    "method": "getLatestMetric",
+    "fnSig": "getLatestMetric(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/Analytics_1782223611.sol:Analytics_61a7cc30": {
+    "key": "61a7cc30",
+    "isCall": true,
+    "contract": "utils/Analytics_1782223611.sol:Analytics",
+    "method": "getMetrics",
+    "fnSig": "getMetrics(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/Analytics_1782223611.sol:Analytics_c426cdcf": {
+    "key": "c426cdcf",
+    "isCall": true,
+    "contract": "utils/Analytics_1782223611.sol:Analytics",
+    "method": "metrics",
+    "fnSig": "metrics(bytes32,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "utils/Analytics_1782223611.sol:Analytics_439a54b9": {
+    "key": "439a54b9",
+    "isCall": false,
+    "contract": "utils/Analytics_1782223611.sol:Analytics",
     "method": "recordMetric",
     "fnSig": "recordMetric(string,uint256)",
     "intrinsicGas": [],
@@ -2624,11 +2668,6 @@
   },
   "deployments": [
    {
-    "name": "Analytics",
-    "gasData": [],
-    "callData": []
-   },
-   {
     "name": "crud/TaskManager_1781981547.sol:TaskManager",
     "gasData": [],
     "callData": []
@@ -2670,6 +2709,16 @@
    },
    {
     "name": "security/AccessControl_1782178499.sol:AccessControl",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "utils/Analytics_1782166642.sol:Analytics",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "utils/Analytics_1782223611.sol:Analytics",
     "gasData": [],
     "callData": []
    },
