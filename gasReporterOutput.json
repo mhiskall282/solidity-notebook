@@ -114,6 +114,105 @@
     "min": 35340,
     "max": 35340
    },
+   "Storage_1784389362_2d1fb389": {
+    "key": "2d1fb389",
+    "isCall": false,
+    "contract": "Storage_1784389362",
+    "method": "authorize",
+    "fnSig": "authorize(address,bool)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Storage_1784389362_b9181611": {
+    "key": "b9181611",
+    "isCall": true,
+    "contract": "Storage_1784389362",
+    "method": "authorized",
+    "fnSig": "authorized(address)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Storage_1784389362_02d05d3f": {
+    "key": "02d05d3f",
+    "isCall": true,
+    "contract": "Storage_1784389362",
+    "method": "creator",
+    "fnSig": "creator()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Storage_1784389362_5a9b0b89": {
+    "key": "5a9b0b89",
+    "isCall": true,
+    "contract": "Storage_1784389362",
+    "method": "getInfo",
+    "fnSig": "getInfo()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Storage_1784389362_af640d0f": {
+    "key": "af640d0f",
+    "isCall": true,
+    "contract": "Storage_1784389362",
+    "method": "id",
+    "fnSig": "id()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Storage_1784389362_22f3e2d4": {
+    "key": "22f3e2d4",
+    "isCall": true,
+    "contract": "Storage_1784389362",
+    "method": "isActive",
+    "fnSig": "isActive()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Storage_1784389362_06fdde03": {
+    "key": "06fdde03",
+    "isCall": true,
+    "contract": "Storage_1784389362",
+    "method": "name",
+    "fnSig": "name()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Storage_1784389362_c47f0027": {
+    "key": "c47f0027",
+    "isCall": false,
+    "contract": "Storage_1784389362",
+    "method": "setName",
+    "fnSig": "setName(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Storage_1784389362_29c68dc1": {
+    "key": "29c68dc1",
+    "isCall": false,
+    "contract": "Storage_1784389362",
+    "method": "toggleActive",
+    "fnSig": "toggleActive()",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "utils/EventLogger_1779596739.sol:EventLogger_3206b2c6": {
     "key": "3206b2c6",
     "isCall": true,
@@ -1781,6 +1880,11 @@
     "min": 540670,
     "max": 540670,
     "percent": 0.9
+   },
+   {
+    "name": "Storage_1784389362",
+    "gasData": [],
+    "callData": []
    },
    {
     "name": "utils/EventLogger_1779596739.sol:EventLogger",
