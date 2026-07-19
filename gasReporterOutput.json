@@ -344,6 +344,50 @@
     "gasData": [],
     "numberOfCalls": 0
    },
+   "Analytics_84127b63": {
+    "key": "84127b63",
+    "isCall": true,
+    "contract": "Analytics",
+    "method": "getLatestMetric",
+    "fnSig": "getLatestMetric(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Analytics_61a7cc30": {
+    "key": "61a7cc30",
+    "isCall": true,
+    "contract": "Analytics",
+    "method": "getMetrics",
+    "fnSig": "getMetrics(string)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Analytics_c426cdcf": {
+    "key": "c426cdcf",
+    "isCall": true,
+    "contract": "Analytics",
+    "method": "metrics",
+    "fnSig": "metrics(bytes32,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
+   "Analytics_439a54b9": {
+    "key": "439a54b9",
+    "isCall": false,
+    "contract": "Analytics",
+    "method": "recordMetric",
+    "fnSig": "recordMetric(string,uint256)",
+    "intrinsicGas": [],
+    "callData": [],
+    "gasData": [],
+    "numberOfCalls": 0
+   },
    "utils/EventLogger_1779596739.sol:EventLogger_3206b2c6": {
     "key": "3206b2c6",
     "isCall": true,
@@ -2053,6 +2097,11 @@
   "deployments": [
    {
     "name": "AccessControl",
+    "gasData": [],
+    "callData": []
+   },
+   {
+    "name": "Analytics",
     "gasData": [],
     "callData": []
    },
